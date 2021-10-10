@@ -1,0 +1,19 @@
+@startuml
+
+class App {
+    contains main method
+}
+class Person {
+    + fname: String
+    + lname: String
+    + salary: int
+}
+class FileReader {
+    +loadList
+}
+
+App <|-- Person
+App <|-- FileReader
+
+
+@enduml
